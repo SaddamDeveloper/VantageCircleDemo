@@ -1,21 +1,105 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<router-outlet></router-outlet>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img width="200" height="70" src="assets/company_logo.png" class="custom-logo" alt="Vantage Circle" itemprop="logo"></a>
+        
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <div class="dropdown-list">
+                <ul>
+
+                  <li>
+                    <div class="dropdown">
+                      <a href="#" class="dropbtn">Perks</a><span class="caret"></span>
+                      <div class="dropdown-content"> 
+                          <div class="row">
+                            <div class="col-md-4">
+                              <div class="divider-r">
+                                <a href="#">Corporate Offers</a>
+                                <a href="#">Shop</a>
+                                <a href="#">Insurance</a>
+                                <a href="#">Dining</a>
+                                <a href="#">Buy/Sell</a>
+                                <a href="#">More</a>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="divider-r">
+                              <a href="#">Samsung</a>
+                              <a href="#">Amazon</a>
+                              <a href="#">Flipkart</a>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <a href="#"><span class="icon-electronics"></span> &nbsp;Electronics</a>
+                              <a href="#"><span class="icon-fashion"></span> &nbsp;Fashion</a>
+                              <a href="#"><span class="icon-homeanddining"></span>&nbsp;Home & Kitchen</a>
+                              <a href="#"><span class="icon-travel"></span>&nbsp;Travel</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li><a href="#">Works</a></li>
+                  <li><a href="#">Life</a></li>
+                </ul>
+              </div>
+              
+            </div>
+            
+            <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                <div class="btn-group">
+                  <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                      <i class="fas fa-search fa-sm"></i>
+                </div>
+              </form>
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="img-profile rounded-circle" src="assets/profilepic.png" width="40">
+                &nbsp;<span class="mr-2 d-none d-lg-inline text-gray-600 small">My Account</span>
+            </a>
+          </div>
+        </nav>
+    <div class="container">
+      <div class="col-md-10 mx-auto">
+        <div class="card text-center">
+           <div class="card-image-top circle" style="background-image: url('assets/profilepic.png')"></div>
+            <div class="card-header">
+              <div class="text-header">
+                <a href="#">Ronie Jackson </a> received Employee of the Month award
+              </div>
+              <div class="text-header-little">
+                By HR Admin | 2 days ago
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="feed_background">
+                <img src="assets/feed_background.png" width="100%" alt="feed">
+                <img src="assets/feed_badge.png" class="feed_badge" width="40%" alt="feed">
+              </div>
+            </div>
+              <div class="card-footer">
+                  <i> <font size="4px">Thank you for your great contribution!</font></i>
+              </div>
+
+                <div class="card-footer">
+                <div class="btn-group" style="width: 100%">
+                  <button class="btn likeBtn"><span class="icon-like"></span> &nbsp; 2 Likes</button>
+                  <button class="btn commentBtn">
+                    <span class="icon-comment"></span> &nbsp; 2 Comments</button>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

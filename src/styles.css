@@ -1,1 +1,219 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@font-face {
+    font-family: 'icomoon';
+    src: url('assets/fonts/icomoon.ttf') format('opentype');
+    src:  url('assets/fonts/icomoon.eot?y9dyyo');
+    src:  url('assets/fonts/icomoon.eot?y9dyyo#iefix') format('embedded-opentype'),
+      url('assets/fonts/icomoon.ttf?y9dyyo') format('truetype'),
+      url('assets/fonts/icomoon.woff?y9dyyo') format('woff'),
+      url('assets/fonts/icomoon.svg?y9dyyo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+body{
+    font-family: 'icomoon' !important;
+    background-color: #f6f6f7;
+}
+.icon-comment:before {
+    content: "\e901";
+    color: #999797;
+  }
+.icon-like:before {
+    content: "\e907";
+    color: #999797;
+  }
+.icon-electronics:before {
+    content: "\e902";
+    color: #999797;
+  }
+.icon-fashion:before {
+    content: "\e903";
+    color: #999797;
+  }
+.icon-homeanddining:before {
+    content: "\e906";
+    color: #999797;
+  }
+.icon-travel:before {
+    content: "\e908";
+    color: #999797;
+  }
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 30px;
+    padding-top: 30px;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  .feed_background{
+      padding: 2px;
+      margin-left: 80px;
+      margin-right: 80px;
+  }
+  .card-header{
+      padding: 2.0rem 1.25rem !important;
+      background-color: #ffffff !important;
+  }
+  .card-footer{
+      background-color: #ffffff !important;
+  }
+  .card-body{
+      background-color: #949fb7;
+  }
+  .feed_background{
+    border: 0;
+    float: left;
+    position: relative;
+  }
+  .feed_badge{
+    border: 0;
+    position: absolute;
+    top: 10%;
+    right: 28%;
+  }
+  .card-image-top {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px !important;
+    height: 60px;
+  }
+  .circle {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    border: 2px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+  }
+  .text-header{
+      margin-top: -25px;
+  }
+  .text-header-little{
+      margin-top: 0.75rem;
+      color: #949fb7;
+  }
+  .footer-text{
+      margin-top: -10px;
+  }
+  .newmenu .logo-site {
+    padding: 0;
+    float: left;
+}
+.newmenu .site-header .nav-section {
+    /* float: right; */
+    padding: 0;
+    text-align: left;
+}
+.main-navigation:last-child {
+    margin-right: 0;
+}
+.main-navigation {
+    clear: none;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+    width: 100%;
+}
+.navbar{
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    padding-bottom: 2px !important;
+}
+.bg-white{
+    background-color: #ffffff !important;
+}
+.vertical-row {
+    height:50px;
+    width:1px; /* edit this if you want */
+    background-color: #8fa0c4;
+   }
+   
+.dropdown-list ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.dropdown-list ul li{
+    float: left;
+}
+.dropdown-list ul li a{
+    margin-top: 10px;
+    height: 65px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.dropdown-list ul li:hover{
+    border-bottom: 1px solid #9823f1;
+}
+.dropdown-list ul li a:hover {
+    background: #ddd;
+}
+/* .dropdown {
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+  } */
+  .dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } 
+  .dropdown-content a {
+      font-size: 15px !important;
+    color: #464444 !important;
+    padding: 10px 12px !important;
+    margin: 2px !important;
+    text-decoration: none;
+    display: block;
+  } 
+  /* /* .dropdown-content a:hover {background-color: #ddd;} */
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #ddd;}   
+.likeBtn{
+    width: 50%;
+    border-right: 1px solid #999797 !important;
+}
+.commentBtn{
+    width: 50%;
+}
+  a {
+      color: #9823f1 !important;
+      cursor: pointer;
+  }
+  .mega-menu{
+      padding: 10px 0px ! important;
+      width: 540px;
+      border-radius: 0;
+      margin-top: 0px;
+  }
+  .divider-r{
+    border-right: 1px solid #999797;
+  }
